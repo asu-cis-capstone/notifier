@@ -6,17 +6,17 @@ Overview:
 Essence Alerts is a tailor made mobile application for Alimentation Couche-Tard, which is the leader in the convenience store industry. The app will allow remote access to the change control and incident reporting environment. In essence employees will be able to view or disapprove changes with regards to the change control, as well as report and view incidents and organize them at will. 
 
 Contributors:
-<ul><li>
-Jesus Carrillo
+<ul>
+<li>Jesus Carrillo</li>
 
-Frank Fan
+<li>Frank Fan</li>
 
-Huong Hong
+<li>Huong Hong</li>
 
-Daniel Mercer
+<li>Daniel Mercer</li>
 
-Henry Yee
-</ul></li>
+<li>Henry Yee</li>
+</ul>
 Organization:
 
 The repository is organized by priority of features according to end user needs. Simply click on a feature to go to the respective code source. The design and main functionality feature are located in the css and js files respectively. The other lua files are located in the feature folders respectively.
