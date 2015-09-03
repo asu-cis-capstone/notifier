@@ -1,4 +1,3 @@
-[![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/notifier.png?label=ready&title=Ready)](https://waffle.io/asu-cis-capstone/notifier)
 # notifier
 repo for project notifier
 
@@ -39,3 +38,6 @@ How to use the app:
 6.	Fill out the required boxes highlighted in red. After they are filled out successfully they will turn white. Click submit when you are done or cancel if you wish to cancel report. 
 
 7.	Logout when you are done. You will automatically be logged out after 5 minutes of inactivity. 
+
+
+[![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/notifier.png?label=ready&title=Ready)](https://waffle.io/asu-cis-capstone/notifier)
