@@ -24,9 +24,9 @@ The repository is organized by priority of features according to end user needs.
 
 # How to use the app:
 
-1.	Download app.
+1.	Download the app from the company given link. The app is not in the Google/Apple store. 
 
-2.	Login with credentials.
+2.	Signup with company credentials. Login with credentials.
 
 3.	Access change control by clicking the respective tab on the dropdown list menu on right of screen. 
 
@@ -35,10 +35,12 @@ The repository is organized by priority of features according to end user needs.
 5.	Access incident reporting by clicking the respective tab on the dropdown list menu on right of screen.
 
 6.	Fill out the required boxes highlighted in red. After they are filled out successfully they will turn white. Click submit when you are done or cancel if you wish to cancel report. 
+	
+7. To view a recent history of change control/incident tickets, click the change history or incident history respectively under the menu tab on the right side of the screen. 
 
-7.	Logout when you are done. You will automatically be logged out after 5 minutes of inactivity. 
+8.	Logout when you are done. You will automatically be logged out after 5 minutes of inactivity. 
 
-<b>Click ready to view our Waffle.Io!</b>
+<b>Click ready to view our Waffle.io!</b>
 [![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/notifier.png?label=ready&title=Ready)](https://waffle.io/asu-cis-capstone/notifier)
 </br>
 <a href="https://docs.google.com/a/asu.edu/presentation/d/1hp8FIdSohzg3uU3n72pp_6qqxuigXG33W19qWVjW7qI/edit?usp=sharing">Click here to view our presentation/Mockup prototypes!</a>
