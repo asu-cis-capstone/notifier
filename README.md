@@ -38,6 +38,7 @@ The repository is organized by priority of features according to end user needs.
 
 7.	Logout when you are done. You will automatically be logged out after 5 minutes of inactivity. 
 
-
+<b>Click ready to view our Waffle.Io!</b>
 [![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/notifier.png?label=ready&title=Ready)](https://waffle.io/asu-cis-capstone/notifier)
+</br>
 <a href="https://docs.google.com/a/asu.edu/presentation/d/1hp8FIdSohzg3uU3n72pp_6qqxuigXG33W19qWVjW7qI/edit?usp=sharing">Click here to view our presentation/Mockup prototypes!</a>
