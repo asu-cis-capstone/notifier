@@ -40,3 +40,4 @@ The repository is organized by priority of features according to end user needs.
 
 
 [![Stories in Ready](https://badge.waffle.io/asu-cis-capstone/notifier.png?label=ready&title=Ready)](https://waffle.io/asu-cis-capstone/notifier)
+<a href="https://docs.google.com/a/asu.edu/presentation/d/1hp8FIdSohzg3uU3n72pp_6qqxuigXG33W19qWVjW7qI/edit?usp=sharing">Click here to view our presentation/Mockup prototypes!</a>
