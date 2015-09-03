@@ -16,9 +16,15 @@ The repository is organized by priority of features according to end user needs.
 
 How to use the app:
 1.	Download app.
+
 2.	Login with credentials.
+
 3.	Access change control by clicking the respective tab on the dropdown list menu on right of screen. 
+
 4.	Click the check box and submit button to approve a change. Click the giant x to not approve change. 
+
 5.	Access incident reporting by clicking the respective tab on the dropdown list menu on right of screen.
+
 6.	Fill out the required boxes highlighted in red. After they are filled out successfully they will turn white. Click submit when you are done or cancel if you wish to cancel report. 
+
 7.	Logout when you are done. You will automatically be logged out after 5 minutes of inactivity. 
