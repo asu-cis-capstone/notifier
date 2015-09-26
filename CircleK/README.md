@@ -11,7 +11,6 @@ How to install and utilize Notifier application Demo
 5. Click on <b>tickets</b> if you wish to view current/outstanding change control tickets. Click approve or deny after carefully reading the contents of each ticket. 
 </br>
 6. Click on <b>history</b> if you wish to view who approved or denied certain tickets. You may order the tickets by sender, reviewer, or by date.   
-</br>
 7. Click on incidents to review or submit incident reports. This feature will be added in the near future. Stay tuned!
 
 
