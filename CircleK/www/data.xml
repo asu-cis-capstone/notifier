@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tickets>
+  <ticket>
+    <desc lang="en">This is ticket 1</desc>
+    <submitter>Giada De Laurentiis</submitter>
+    <date>08/12/2015</date>
+    <status>approved</status>
+  </ticket>
+  <ticket>
+    <desc lang="en">This is ticket 2</desc>
+    <submitter>J K. Rowling</submitter>
+    <date>08/13/2015</date>
+    <status>approved</status>
+  </ticket>
+  <ticket>
+    <desc lang="en-us">This is ticket 3</desc>
+    <submitter>James McGovern</submitter>
+    <date>08/14/2015</date>
+    <status>denied</status>
+  </ticket>
+  <ticket>
+    <desc lang="en-us">This is ticket 4</desc>
+    <submitter>Erik T. Ray</submitter>
+    <date>08/15/2015</date>
+    <status>denied</status>
+  </ticket>
+</tickets>
