@@ -12,6 +12,6 @@ How to install and utilize Notifier application Demo
 </br>
 6. Click on <b>history</b> if you wish to view who approved or denied certain tickets. You may order the tickets by sender, reviewer, or by date.   
 </br>
-7. Click on incidents to review or submit incident reports. This feature will be added in the near future. Stay tuned!!
+7. Click on incidents to review or submit incident reports. This feature will be added in the near future. Stay tuned!
 
 
