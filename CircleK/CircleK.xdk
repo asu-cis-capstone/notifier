@@ -265,5 +265,8 @@
     "gameMetadata": {},
     "projectTags": [],
     "testDirectory": "test"
+  },
+  "editorTab": {
+    "showLiveDevelopmentTasksPanel": true
   }
 }

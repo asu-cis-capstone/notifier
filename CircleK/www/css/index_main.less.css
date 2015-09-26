@@ -1134,3 +1134,9 @@ li:not(last-child) {
   margin-top: 10px;
   display: inline;
 }
+.windowsize {
+  margin-top: 20px;
+}
+#window {
+  height: 90%;
+}
