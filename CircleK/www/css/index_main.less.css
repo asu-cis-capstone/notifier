@@ -1136,7 +1136,77 @@ li:not(last-child) {
 }
 .windowsize {
   margin-top: 20px;
+  height: 100%;
 }
 #window {
-  height: 90%;
+  height: 100%;
+}
+.detailpage {
+  margin-top: 20px;
+}
+#window {
+  height: 30px;
+}
+@media all {
+  #afui .wrapping-col > .accpet,
+  #afui .wrapping-col > .afScrollPanel > .accpet {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .accpet,
+  #afui .wrapping-col > .afScrollPanel > .accpet {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .vertical-col > .accpet,
+  #afui .vertical-col > .afScrollPanel > .accpet {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #afui .vertical-col > .accpet,
+  #afui .vertical-col > .afScrollPanel > .accpet {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #afui .accpet {
+    margin-top: 90px;
+  }
+}
+.accpetbtn #accpet {
+  margin-left: 90px;
+}
+@media all {
+  #afui .accpetW {
+    -webkit-flex: 1 1 auto !important;
+    -moz-flex: 1 1 auto !important;
+    -ms-flex: 1 1 auto !important;
+    -o-flex: 1 1 auto !important;
+    flex: 1 1 auto !important;
+    max-width: 130px;
+  }
+}
+@media all {
+  #afui .wrapping-col > .deny,
+  #afui .wrapping-col > .afScrollPanel > .deny {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .deny,
+  #afui .wrapping-col > .afScrollPanel > .deny {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .vertical-col > .deny,
+  #afui .vertical-col > .afScrollPanel > .deny {
+    margin-left: 180px;
+    margin-right: 6px;
+  }
+  #afui .vertical-col > .deny,
+  #afui .vertical-col > .afScrollPanel > .deny {
+    margin-left: 180px;
+    margin-right: 6px;
+  }
+  #afui .deny {
+    margin-top: -42px;
+  }
 }
