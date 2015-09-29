@@ -13,4 +13,6 @@ How to install and utilize Notifier application Demo
 6. Click on <b>history</b> if you wish to view who approved or denied certain tickets. You may order the tickets by sender, reviewer, or by date.   
 7. Click on incidents to review or submit incident reports. This feature will be added in the near future. Stay tuned!
 
+Once the application is complete, we will send the application by e-mail to the clinet.
+The clinet then can clink on the download link to download the application.
 
