@@ -6,7 +6,7 @@ How to install and utilize Notifier application Demo
 
 3. Click on server apps then click on <b>CircleK</b>.
 
-4. Login with proper CircleK credentials or sign in as gues by leaving the fields blank.
+4. Login with proper CircleK credentials or sign in as guess by leaving the fields blank.
 
 5. Click on <b>tickets</b> if you wish to view current/outstanding change control tickets. Click approve or deny after carefully reading the contents of each ticket. 
 
