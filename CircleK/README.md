@@ -1,18 +1,23 @@
 How to install and utilize Notifier application Demo
 ======================================================================
-1. Download and install Intel App Preview on your mobile device.
+Get that application through email
 
-2. Use <b>haley0808</b> as username and <b>cis440_ck</b> as the password when prompted for credentials.
+--Huong Hong (hmhong@asu.edu)
+--Frank fan (ffan2@asu.edu)
+--Henry Yee (hyee1@asu.edu)
+--Daniel Mercer (dtmercer@asu.edu)
+--Jesus Carrillo (jesusjv641@gmail.com)
 
-3. Click on server apps then click on <b>CircleK</b>.
+1. Send a request through email to us, and we will send you the link for the application
+	
+2. Check your email on your phone, and click on the attaching files.
 
-4. Login with proper CircleK credentials or sign in as guess by leaving the fields blank.
+3. Once you download the attachment, you can install it on your phone.
 
-5. Click on <b>tickets</b> if you wish to view current/outstanding change control tickets. Click approve or deny after carefully reading the contents of each ticket. 
+4. Make sure you change your setting on the phone to under security to allow installation of application from unknown sources to be able to install the CircleK.
 
-6. Click on <b>history</b> if you wish to view who approved or denied certain tickets. You may order the tickets by sender, reviewer, or by date.   
-7. Click on incidents to review or submit incident reports. This feature will be added in the near future. Stay tuned!
-
-Once the application is complete, we will send the application by e-mail to the clinet.
-The clinet then can clink on the download link to download the application.
+5. After the application is installed, you can launch it and sign in with your username and password.
+ 
+**Note: Once the application is complete, we will send the application by e-mail to the client.
+The client then can either put it on their web for the employees to download from, or only send to users that need to use it.
 
