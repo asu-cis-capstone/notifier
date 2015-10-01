@@ -863,20 +863,22 @@ body:not(#afui) .upage-outer {
   #afui .wrapping-col > .loginm,
   #afui .wrapping-col > .afScrollPanel > .loginm {
     margin-left: 6px;
-    margin-right: 6px;
+    margin-right: 10px;
   }
   #afui .wrapping-col > .loginm,
   #afui .wrapping-col > .afScrollPanel > .loginm {
     margin-left: 6px;
-    margin-right: 6px;
+    margin-right: 10px;
   }
   #afui .vertical-col > .loginm,
   #afui .vertical-col > .afScrollPanel > .loginm {
     margin-left: 85px;
+    margin-right: 0px;
   }
   #afui .vertical-col > .loginm,
   #afui .vertical-col > .afScrollPanel > .loginm {
     margin-left: 85px;
+    margin-right: 0px;
   }
 }
 .color {
