@@ -5,10 +5,9 @@
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="galleria/galleria.classic.css">
-        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
         <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+        <meta charset="UTF-8">
         <title>Blank App Designer Packaged Web App Project Template</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
@@ -29,13 +28,6 @@
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
 
         <style>
-            table, th, td {
-              border: 1px solid black;
-              border-collapse:collapse;
-            }
-            th, td {
-              padding: 5px;
-            }
             /* following three (cascaded) are equivalent to above three meta viewport statements */
             /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
             /* see http://dev.w3.org/csswg/css-device-adapt/ */
@@ -76,72 +68,93 @@
         -->
         <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
         <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
-        <script type="application/javascript" src="js/index_user_scripts.js"></script>
-        <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
-        <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
-        <!--            
-            You may substitute jQuery for the App Framework selector library.
-            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+
+        <script src="http://cdn.app-framework-software.intel.com/2.1/appframework.min.js"></script>
+        <!-- Or you can use jQuery
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         -->
+        <script src="xdk/services/xml2json.js"></script>
+        <script src="xhr.js"></script>
+        <script src="xdk/services/service-credentials.js"></script>
+        <script src="xdk/services/service-methods.js"></script>
+
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
         <script type="application/javascript" src="lib/jquery.min.js"></script>
-        <script type="application/javascript" src="app_framework/themeRelease.js"></script>
+        <script type="application/javascript" src="lib/angular.min.js"></script>
+        <script type="application/javascript" src="xdk/ad/angular_support.js"></script>
+        <script type="application/javascript" src="xdk/ad/jquery.ba-throttle-debounce.min.js"></script>
+        <script type="application/javascript" src="xdk/ad/ad_events_data.js"></script>
+        <script type="application/javascript" src="js/index_init_services.js"></script>
+        <script type="application/javascript" src="xdk/ad/index_setup_services.js"></script>
         <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
     </head>
 
-    <body id="afui" class="af">
+    <body id="afui" ng-app="myApp">
 
         <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
         <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-        <header class="wrapping-col wrap-element uib_w_13" data-uib="app_framework/header" data-ver="2" id="af-header-0">
+        <header class="wrapping-col wrap-element uib_w_1" data-uib="app_framework/header" data-ver="2" id="af-header-4" ng-controller="angular_controllers.af_header-4.controller">
             <h1>Ticket Control</h1>
-
-        </header>
-        <header class="wrapping-col wrap-element uib_w_4" data-uib="app_framework/header" data-ver="2" id="af-header-1">
-            <h1>Ticket Control</h1><a class="button widget uib_w_23 header-right d-margins" data-uib="app_framework/button" data-ver="1" id="logoutbutton_main" href="#loginpage" data-transition="fade">Logout</a>
-            <a class="button widget uib_w_37 d-margins icon left" data-uib="app_framework/button" data-ver="1" id="back" onclick="history.go(-1);return true;"></a>
-        </header>
-
-        <header class="wrapping-col wrap-element uib_w_20" data-uib="app_framework/header" data-ver="2" id="af-header-2">
-            <a class="button widget uib_w_21 header-left d-margins" data-uib="app_framework/button" data-ver="1" id="homebutton" href="#mainpage" data-transition="fade">Home</a>
-            <h1></h1>
-            <a class="button widget uib_w_22 d-margins header-right" data-uib="app_framework/button" data-ver="1" id="logoutbutton_history" href="#loginpage" data-transition="fade">Logout</a>
         </header>
         <div class="uwrap" id="content">
-            <div class="upage vertical-col left panel background" id="loginpage" data-header="af-header-0" data-footer="none">
-                <div class="widget uib_w_1 scale-image main" data-uib="media/img" data-ver="0">
-                    <figure class="figure-align">
-                        <img src="images/logo.png" id="logoimg">
 
-                        <figcaption data-position="bottom"></figcaption>
-                    </figure>
+            <div class="upage vertical-col left CircleKBack panel" id="loginpage" data-header="af-header-4" data-footer="none">
+
+                <div class="table-thing with-label widget uib_w_2 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <input class="wide-control" placeholder="Username" type="text" id="usernameinput" name="usernameinput">
+                </div>
+                <div class="table-thing with-label widget uib_w_3 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <input class="wide-control" placeholder="Password" type="password" name="passwordinput" id="passwordinput">
+                </div><a class="button widget uib_w_4 d-margins" data-uib="app_framework/button" data-ver="1" id="loginbutton">Login</a>
+            </div>
+
+            <div class="upage vertical-col left panel CircleKBack" id="mainpage" data-header="af-header-4" data-footer="none"><a class="button widget uib_w_5 d-margins" data-uib="app_framework/button" data-ver="1" id="pendingButton">Pending</a>
+            </div>
+
+            <div class="upage vertical-col left panel CircleKBack" id="ticketspage" data-header="af-header-4" data-footer="none">
+
+                <div class="table-thing with-label widget uib_w_6 d-margins" data-uib="app_framework/select" data-ver="1">
+                    <label class="narrow-control label-top-left" for="selecttickets">Select Ticket</label>
+                    <select class="wide-control" id="selecttickets"></select>
                 </div>
                 
-                   <div class="table-thing with-label widget uib_w_2 d-margins usernamewidths unplace" data-uib="app_framework/input" data-ver="1">
-                       <form><input class="wide-control" placeholder="Username" type="text" id="username" name="username" required="">
+                <a class="button widget uib_w_7 d-margins" data-uib="app_framework/button" data-ver="1" id="detailsButton">Ticket Details</a><a class="button widget uib_w_8 d-margins" data-uib="app_framework/button" data-ver="1" id="approversButton">View Approvers</a>
+                <div class="table-thing with-label widget uib_w_14 d-margins" data-uib="app_framework/textarea" data-ver="1">
+                    <textarea class="wide-control" placeholder="Comments" rows="3" wrap="soft" id="commentTextArea" name="commentTextArea"></textarea>
+                </div>
+                <a class="button widget uib_w_9 d-margins" data-uib="app_framework/button" data-ver="1" id="approveButton">Approve</a><a class="button widget uib_w_10 d-margins" data-uib="app_framework/button" data-ver="1" id="conditionalButton" ng-controller="angular_controllers.conditionalButton.controller">Conditional Approval</a>
+                <a class="button widget uib_w_11 d-margins" data-uib="app_framework/button" data-ver="1" id="disapproveButton" ng-controller="angular_controllers.disapproveButton.controller">Disapprove</a>
+
+            </div>
+
+            <div class="upage vertical-col left panel CircleKBack" id="ticketdetails" data-header="af-header-4" data-footer="none">
+                <div class="widget uib_w_12 d-margins" data-uib="app_framework/input_group" data-ver="1">
+                    <div class="formGroupHead">Ticket Details</div>
+                    <div class="input-group" id="detailInputGroup">
+                        <div class="col uib_col_2 single-col" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="table-thing with-label widget uib_w_3 d-margins usernamewidths unplace" data-uib="app_framework/input" data-ver="1">
-                        <input class="wide-control" placeholder="Password" type="password" id="password" name="pswrd" required="">
+                </div>
+            </div>
+            <div class="upage vertical-col left panel CircleKBack" id="approvers" data-header="af-header-4" data-footer="none">
+                <div class="widget uib_w_13 d-margins" data-uib="app_framework/input_group" data-ver="1">
+                    <div class="formGroupHead">Approvers</div>
+                    <div class="input-group" id="approverList">
+                        <div class="col uib_col_3 single-col" data-uib="layout/col" data-ver="0" ng-controller="angular_controllers.uib_col_3.controller">
+                            <div class="widget-container content-area vertical-col left">
+
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
                     </div>
-                <input class="button widget uib_w_8 loginw loginm" data-uib="app_framework/button" data-ver="1" id="loginbutton" data-transition="fade" type="button" onclick="check()" value="login"/></form>
-               
-                <script> 
-                    function check()
-                    {
-                        if( document.getElementById("username").value=="c" && document.getElementById("password").value=="ck") 
-                        {
-                            
-                            location.href="main.html";
-                        
-                        }
-                        else{
-                            alert("Error Passowrd or Username. Please try again.")}
-                    }
-                </script>
-				
-		</div>
+                </div>
+            </div>
         </div>
-		
+
     </body>
 
 </html>
