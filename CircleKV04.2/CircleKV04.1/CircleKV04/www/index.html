@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Packaged Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
+        <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+
+        <script src="http://cdn.app-framework-software.intel.com/2.1/appframework.min.js"></script>
+        <!-- Or you can use jQuery
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        -->
+        <script src="xdk/services/xml2json.js"></script>
+        <script src="xhr.js"></script>
+        <script src="xdk/services/service-credentials.js"></script>
+        <script src="xdk/services/service-methods.js"></script>
+
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="lib/angular.min.js"></script>
+        <script type="application/javascript" src="xdk/ad/angular_support.js"></script>
+        <script type="application/javascript" src="xdk/ad/jquery.ba-throttle-debounce.min.js"></script>
+        <script type="application/javascript" src="xdk/ad/ad_events_data.js"></script>
+        <script type="application/javascript" src="js/index_init_services.js"></script>
+        <script type="application/javascript" src="xdk/ad/index_setup_services.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+        <script type="application/javascript" src="app_framework/themeRelease.js"></script>
+    </head>
+
+    <body id="afui" ng-app="myApp" class="af">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <header class="wrapping-col wrap-element uib_w_1 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-4" ng-controller="angular_controllers.af_header-4.controller"><a class="button backButton">Back</a>
+            <h1>Ticket Control</h1>
+              <a class="button widget uib_w_13 header-right d-margins" data-uib="app_framework/button" data-ver="1" id="logoutbutton_main" onclick="#loginpage" data-transition="fade" href="#loginpage">Logout</a>
+        </header>
+        <div class="uwrap" id="content">
+
+            <div class="upage vertical-col left CircleKBack panel" id="loginpage" data-header="af-header-4" data-footer="none">
+                <div class="widget uib_w_5 scale-image d-margins imgSize Dude" data-uib="media/img" data-ver="0">
+                    <figure class="figure-align">
+                        <img src="images/logo.png" id="logoimg">
+
+                        <figcaption data-position="bottom"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="table-thing with-label widget uib_w_2 d-margins" data-uib="app_framework/input" data-ver="1" ng-controller="angular_controllers.uib_w_2.controller">
+                    <input class="wide-control" placeholder="Username" type="text" id="usernameinput" name="usernameinput">
+                </div>
+                <div class="table-thing with-label widget uib_w_3 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <input class="wide-control" placeholder="Password" type="password" name="passwordinput" id="passwordinput">
+                </div>
+                <div class="widget uib_w_15 d-margins" data-uib="app_framework/checkbox" data-ver="1">
+                    <input type="checkbox" id="af-checkbox-1">
+                    <label class="content-box" for="af-checkbox-1">Remember User/Password</label>
+                </div><a class="button widget uib_w_4 d-margins" data-uib="app_framework/button" data-ver="1" id="loginbutton">Login</a>
+            </div>
+
+            <div class="upage vertical-col left panel CircleKBack" id="ticketspage" data-header="af-header-4" data-footer="none">
+
+                <div class="table-thing with-label widget uib_w_6 d-margins" data-uib="app_framework/select" data-ver="1">
+                    <label class="narrow-control label-top-left" for="selecttickets">Select Ticket</label>
+
+                    <select class="wide-control" id="selecttickets"></select>
+                </div>
+
+                <a class="button widget uib_w_7 d-margins" data-uib="app_framework/button" data-ver="1" id="detailsButton">Ticket Details</a><a class="button widget uib_w_8 d-margins" data-uib="app_framework/button" data-ver="1" id="approversButton">View Approvers</a>
+                <div class="table-thing with-label widget uib_w_14 d-margins" data-uib="app_framework/textarea" data-ver="1">
+                    <textarea class="wide-control" placeholder="Comments" rows="3" wrap="soft" id="commentTextArea" name="commentTextArea"></textarea>
+                </div>
+                <a class="button widget uib_w_9 d-margins" data-uib="app_framework/button" data-ver="1" id="approveButton">Approve</a><a class="button widget uib_w_10 d-margins" data-uib="app_framework/button" data-ver="1" id="conditionalButton" ng-controller="angular_controllers.conditionalButton.controller">Conditional Approval</a>
+                <a class="button widget uib_w_11 d-margins" data-uib="app_framework/button" data-ver="1" id="disapproveButton" ng-controller="angular_controllers.disapproveButton.controller">Disapprove</a>
+
+            </div>
+
+            <div class="upage vertical-col left panel CircleKBack" id="ticketdetails" data-header="af-header-4" data-footer="none">
+                <div class="widget uib_w_12 d-margins" data-uib="app_framework/input_group" data-ver="1">
+                    <div class="formGroupHead">Ticket Details</div>
+                    <div class="input-group" id="detailInputGroup">
+                        <div class="col uib_col_2 single-col" data-uib="layout/col" data-ver="0" font-style="sans-serif" font-weight="bold">
+                            <div class="widget-container content-area vertical-col">
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upage vertical-col left panel CircleKBack" id="approvers" data-header="af-header-4" data-footer="none">
+                <div class="widget uib_w_13 d-margins" data-uib="app_framework/input_group" data-ver="1" ng-controller="angular_controllers.uib_w_13.controller">
+                    <div class="formGroupHead">Approvers</div>
+                    <div class="input-group" id="approverList">
+                        <div class="col uib_col_3 single-col" data-uib="layout/col" data-ver="0" ng-controller="angular_controllers.uib_col_3.controller">
+                            <div class="widget-container content-area vertical-col left">
+
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
